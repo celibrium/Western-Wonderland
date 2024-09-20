@@ -1,0 +1,45 @@
+\doxysection{Events.\+h File Reference}
+\hypertarget{_events_8h}{}\label{_events_8h}\index{Events.h@{Events.h}}
+
+
+Header file defining functions related to in-\/game events.  
+
+
+{\ttfamily \#include $<$SFML/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}Player.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{events_8cpp_acbf8b4dac8c9e63918133aa1e1ebe0c9}{events\+::player\+Event}} (sf\+::\+Render\+Window \&window, const std\+::string \&message, \mbox{\hyperlink{class_player}{Player}} \&player)
+\begin{DoxyCompactList}\small\item\em Displays an event popup window to the player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file defining functions related to in-\/game events. 
+
+\begin{DoxyAuthor}{Author}
+Ansel Zeng, Kelly Guo, Stanley Cao, Charmaine Lee, Nicole Moskovitch 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{events_8cpp_acbf8b4dac8c9e63918133aa1e1ebe0c9}\label{events_8cpp_acbf8b4dac8c9e63918133aa1e1ebe0c9} 
+\index{Events.h@{Events.h}!playerEvent@{playerEvent}}
+\index{playerEvent@{playerEvent}!Events.h@{Events.h}}
+\doxysubsubsection{\texorpdfstring{playerEvent()}{playerEvent()}}
+{\footnotesize\ttfamily void events\+::player\+Event (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{const std\+::string \&}]{message,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{player }\end{DoxyParamCaption})}
+
+
+
+Displays an event popup window to the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & SFML Render\+Window to display the event popup. \\
+\hline
+{\em message} & Message to be displayed in the popup window. \\
+\hline
+{\em player} & \doxylink{class_player}{Player} object representing the game state. \\
+\hline
+\end{DoxyParams}

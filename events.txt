@@ -1,0 +1,44 @@
+Unexpected Broughdale Bash: You end up at a legendary Broughdale Avenue party during Homecoming.
+20 
+-15 
+-5 
+
+Late Night at Weldon: You spend the entire night at Weldon Library cramming for midterms
+-10
+-20
+15
+
+Mustang Pride Rally: You attend a spirited Western Mustangs football game, painting your face purple.
+15
+-5
+0
+
+Frost Week Fiasco: You enjoy Frost Week activities a bit too much, missing a couple of morning lectures.
+10
+-10
+-10
+
+Spoke Bagel Tradition: You have a delicious bagel at The Spoke, leading to a very good day.
+10
+0
+0
+
+Thames River Retreat: You take a relaxing walk along the Thames River to de-stress before exams.
+15
+0
+0
+
+UC Hill Sunrise: After an all-nighter, you and friends watch the sunrise on University College Hill.
+20
+-20
+-10
+
+Lost in the Social Science Building: You get lost in the Social Science building's maze-like corridors, missing a part of your lecture.
+-5
+0
+-5
+
+Ivey Case Crunch: You spend the weekend preparing for a case competition at Ivey.
+-10
+-15
+20

@@ -1,0 +1,409 @@
+\doxysection{Player Class Reference}
+\hypertarget{class_player}{}\label{class_player}\index{Player@{Player}}
+
+
+Represents the player character in the game.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_ab219427a73008eaa175399b0c507a7c4}{Player}} (const std\+::vector$<$ sf\+::\+Vector2f $>$ \&spaces, sf\+::\+Color color, float radius=3.\+0f)
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{class_player}{Player} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a37c9b8fa28c4b659fdba9b4305aee908}{move}} (int target\+Index)
+\begin{DoxyCompactList}\small\item\em Initiates movement towards a target space on the game board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}{update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the player\textquotesingle{}s state, including movement and resource management. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a70bbe0afb8ef88207288c9134ae80b6e}{draw}} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Draws the player on the specified SFML Render\+Window. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_player_a4f679a9d2fa60e76fe00d615dfe4d584}{get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the current position of the player. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_player_a68c343babb8501a3d19bc37d0d8df390}{on\+Event}} (const std\+::vector$<$ sf\+::\+Vector2f $>$ \&event\+Spaces)
+\begin{DoxyCompactList}\small\item\em Checks if the player is on an event space. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a7d2062380721cbe36e9bbe608eb5e46b}{set\+Major}} (int value)
+\begin{DoxyCompactList}\small\item\em Sets the player\textquotesingle{}s chosen major. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_a75d046761489a1e075ce8e8bf3e14f0d}{get\+Major}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the player\textquotesingle{}s chosen major. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a032f8365f4db9c00ac15f3f55ed3d1d2}{set\+Path}} (const std\+::vector$<$ sf\+::\+Vector2f $>$ \&spaces)
+\begin{DoxyCompactList}\small\item\em Sets the player\textquotesingle{}s movement path. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_player_acf18f600dc54a826611e85a2caf348f9}{just\+Moved}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the player has just moved. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a1197ef348f6f7e0b636b3c8ff0130901}{set\+Debt}} (int amount)
+\begin{DoxyCompactList}\small\item\em Sets the player\textquotesingle{}s debt resource. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a56218c3b37664a9d7aced0a234e2813e}{set\+Happiness}} (int amount)
+\begin{DoxyCompactList}\small\item\em Sets the player\textquotesingle{}s happiness resource. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a8e5bd26f78b9239cd5928f636592fc05}{set\+GPA}} (int amount)
+\begin{DoxyCompactList}\small\item\em Sets the player\textquotesingle{}s GPA resource. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_aaeb139487064db5c7f1c9d320926a450}{get\+Debt}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the player\textquotesingle{}s debt resource. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_a8f4f1d6d8b6436e2d0560e9b8a8e6c6e}{get\+Happiness}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the player\textquotesingle{}s happiness resource. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_ae576eaa93512a1a2d3c135879cb85260}{get\+GPA}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the player\textquotesingle{}s GPA resource. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_player_ae846567a41aa2ce33feabb6562c00ca4}{finished}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the player has reached the end of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_player_ae797dfb58e3cf434bc2fc3cf9c184335}\label{class_player_ae797dfb58e3cf434bc2fc3cf9c184335} 
+sf\+::\+Circle\+Shape {\bfseries marker}
+\begin{DoxyCompactList}\small\item\em Shape representing the player\textquotesingle{}s position on the game board. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_ab7d15897ddde5fe3f7fc88d889ef5bcb}\label{class_player_ab7d15897ddde5fe3f7fc88d889ef5bcb} 
+bool {\bfseries is\+Moving}
+\begin{DoxyCompactList}\small\item\em Flag indicating whether the player is currently in motion. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a45d6174464d2e2cee07029e0b5aa5f82}\label{class_player_a45d6174464d2e2cee07029e0b5aa5f82} 
+float {\bfseries move\+Speed}
+\begin{DoxyCompactList}\small\item\em Speed of player movement. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a99fa6fdbb5751f61d64be7ca7a8a3605}\label{class_player_a99fa6fdbb5751f61d64be7ca7a8a3605} 
+int {\bfseries major}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_player}{Player}\textquotesingle{}s chosen major. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a477b3178c451ce01bd50401054aaaa96}\label{class_player_a477b3178c451ce01bd50401054aaaa96} 
+int {\bfseries current\+Space\+Index}
+\begin{DoxyCompactList}\small\item\em Index of the current space on the game board. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_aaea89a9dea9c13ded8b0bdd08a14d8c7}\label{class_player_aaea89a9dea9c13ded8b0bdd08a14d8c7} 
+int {\bfseries target\+Space\+Index}
+\begin{DoxyCompactList}\small\item\em Index of the target space for movement. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a778b0ebeebf2cec3ea201ee3ace76693}\label{class_player_a778b0ebeebf2cec3ea201ee3ace76693} 
+bool {\bfseries moved}
+\begin{DoxyCompactList}\small\item\em Flag indicating whether the player has moved. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a79def3f728926c62fac4fa5bff5e6c05}\label{class_player_a79def3f728926c62fac4fa5bff5e6c05} 
+sf\+::\+Clock {\bfseries move\+Clock}
+\begin{DoxyCompactList}\small\item\em Clock to manage movement delay. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a6032886ba8dcdb0f99bf5566064f0a5d}\label{class_player_a6032886ba8dcdb0f99bf5566064f0a5d} 
+float {\bfseries move\+Delay}
+\begin{DoxyCompactList}\small\item\em Duration of movement delay in seconds. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_ac867ff20c39f0634f14774dfb22ac5e2}\label{class_player_ac867ff20c39f0634f14774dfb22ac5e2} 
+int {\bfseries debt}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_player}{Player}\textquotesingle{}s debt resource. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a291699f7ca6181c84f2e0ed7f039dea5}\label{class_player_a291699f7ca6181c84f2e0ed7f039dea5} 
+int {\bfseries happiness}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_player}{Player}\textquotesingle{}s happiness resource. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a695cd657f4897402a30cf94b9c979c63}\label{class_player_a695cd657f4897402a30cf94b9c979c63} 
+int {\bfseries GPA}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_player}{Player}\textquotesingle{}s GPA resource. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_abd954f53d2e16c72dfaf3000bc59acb5}\label{class_player_abd954f53d2e16c72dfaf3000bc59acb5} 
+std\+::vector$<$ sf\+::\+Vector2f $>$ {\bfseries path}
+\begin{DoxyCompactList}\small\item\em Path representing the player\textquotesingle{}s movement trajectory. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_abceb5369ffe38ab6269a244105492ddc}\label{class_player_abceb5369ffe38ab6269a244105492ddc} 
+bool {\bfseries event\+Triggered}
+\begin{DoxyCompactList}\small\item\em Flag indicating whether an event has been triggered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the player character in the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_player_ab219427a73008eaa175399b0c507a7c4}\label{class_player_ab219427a73008eaa175399b0c507a7c4} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ sf\+::\+Vector2f $>$ \&}]{spaces,  }\item[{sf\+::\+Color}]{color,  }\item[{float}]{radius = {\ttfamily 3.0f} }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{class_player}{Player} class. 
+
+Constructs a \doxylink{class_player}{Player} object with specified attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em spaces} & Vector of positions representing the game board spaces. \\
+\hline
+{\em color} & Color of the player\textquotesingle{}s marker. \\
+\hline
+{\em radius} & Radius of the player\textquotesingle{}s marker.\\
+\hline
+{\em spaces} & Vector of positions representing the player\textquotesingle{}s path. \\
+\hline
+{\em color} & Color of the player\textquotesingle{}s marker. \\
+\hline
+{\em radius} & Radius of the player\textquotesingle{}s marker. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_a70bbe0afb8ef88207288c9134ae80b6e}\label{class_player_a70bbe0afb8ef88207288c9134ae80b6e} 
+\index{Player@{Player}!draw@{draw}}
+\index{draw@{draw}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Player\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Draws the player on the specified SFML Render\+Window. 
+
+Draws the player on the SFML Render\+Window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & SFML Render\+Window to draw the player on. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_ae846567a41aa2ce33feabb6562c00ca4}\label{class_player_ae846567a41aa2ce33feabb6562c00ca4} 
+\index{Player@{Player}!finished@{finished}}
+\index{finished@{finished}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{finished()}{finished()}}
+{\footnotesize\ttfamily bool Player\+::finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the player has reached the end of the game. 
+
+Checks if the player has reached the end of the path.
+
+\begin{DoxyReturn}{Returns}
+True if the player has finished, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_player_aaeb139487064db5c7f1c9d320926a450}\label{class_player_aaeb139487064db5c7f1c9d320926a450} 
+\index{Player@{Player}!getDebt@{getDebt}}
+\index{getDebt@{getDebt}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getDebt()}{getDebt()}}
+{\footnotesize\ttfamily int Player\+::get\+Debt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the player\textquotesingle{}s debt resource. 
+
+Gets the current debt of the player.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_player}{Player}\textquotesingle{}s debt amount.
+
+Current debt of the player. 
+\end{DoxyReturn}
+\Hypertarget{class_player_ae576eaa93512a1a2d3c135879cb85260}\label{class_player_ae576eaa93512a1a2d3c135879cb85260} 
+\index{Player@{Player}!getGPA@{getGPA}}
+\index{getGPA@{getGPA}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getGPA()}{getGPA()}}
+{\footnotesize\ttfamily int Player\+::get\+GPA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the player\textquotesingle{}s GPA resource. 
+
+Gets the current GPA of the player.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_player}{Player}\textquotesingle{}s GPA amount.
+
+Current GPA of the player. 
+\end{DoxyReturn}
+\Hypertarget{class_player_a8f4f1d6d8b6436e2d0560e9b8a8e6c6e}\label{class_player_a8f4f1d6d8b6436e2d0560e9b8a8e6c6e} 
+\index{Player@{Player}!getHappiness@{getHappiness}}
+\index{getHappiness@{getHappiness}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHappiness()}{getHappiness()}}
+{\footnotesize\ttfamily int Player\+::get\+Happiness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the player\textquotesingle{}s happiness resource. 
+
+Gets the current happiness of the player.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_player}{Player}\textquotesingle{}s happiness amount.
+
+Current happiness of the player. 
+\end{DoxyReturn}
+\Hypertarget{class_player_a75d046761489a1e075ce8e8bf3e14f0d}\label{class_player_a75d046761489a1e075ce8e8bf3e14f0d} 
+\index{Player@{Player}!getMajor@{getMajor}}
+\index{getMajor@{getMajor}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getMajor()}{getMajor()}}
+{\footnotesize\ttfamily int Player\+::get\+Major (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the player\textquotesingle{}s chosen major. 
+
+Gets the major of the player.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_player}{Player}\textquotesingle{}s major.
+
+Major value of the player. 
+\end{DoxyReturn}
+\Hypertarget{class_player_a4f679a9d2fa60e76fe00d615dfe4d584}\label{class_player_a4f679a9d2fa60e76fe00d615dfe4d584} 
+\index{Player@{Player}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Player\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the current position of the player. 
+
+Gets the current position of the player.
+
+\begin{DoxyReturn}{Returns}
+Current position as an SFML Vector2f.
+
+Vector representing the player\textquotesingle{}s current position. 
+\end{DoxyReturn}
+\Hypertarget{class_player_acf18f600dc54a826611e85a2caf348f9}\label{class_player_acf18f600dc54a826611e85a2caf348f9} 
+\index{Player@{Player}!justMoved@{justMoved}}
+\index{justMoved@{justMoved}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{justMoved()}{justMoved()}}
+{\footnotesize\ttfamily bool Player\+::just\+Moved (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the player has just moved. 
+
+Checks if the player has just finished moving.
+
+\begin{DoxyReturn}{Returns}
+True if the player has just moved, false otherwise.
+
+True if the player has just finished moving, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_player_a37c9b8fa28c4b659fdba9b4305aee908}\label{class_player_a37c9b8fa28c4b659fdba9b4305aee908} 
+\index{Player@{Player}!move@{move}}
+\index{move@{move}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Player\+::move (\begin{DoxyParamCaption}\item[{int}]{spaces }\end{DoxyParamCaption})}
+
+
+
+Initiates movement towards a target space on the game board. 
+
+Moves the player a specified number of spaces.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+Index} & Index of the target space.\\
+\hline
+{\em spaces} & Number of spaces to move. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a68c343babb8501a3d19bc37d0d8df390}\label{class_player_a68c343babb8501a3d19bc37d0d8df390} 
+\index{Player@{Player}!onEvent@{onEvent}}
+\index{onEvent@{onEvent}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{onEvent()}{onEvent()}}
+{\footnotesize\ttfamily bool Player\+::on\+Event (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ sf\+::\+Vector2f $>$ \&}]{event\+Spaces }\end{DoxyParamCaption})}
+
+
+
+Checks if the player is on an event space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Spaces} & Vector of positions representing event spaces. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the player is on an event space, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_player_a1197ef348f6f7e0b636b3c8ff0130901}\label{class_player_a1197ef348f6f7e0b636b3c8ff0130901} 
+\index{Player@{Player}!setDebt@{setDebt}}
+\index{setDebt@{setDebt}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setDebt()}{setDebt()}}
+{\footnotesize\ttfamily void Player\+::set\+Debt (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Sets the player\textquotesingle{}s debt resource. 
+
+Increases or decreases the player\textquotesingle{}s debt.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Debt amount to set.\\
+\hline
+{\em amount} & Amount to change the debt by. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a8e5bd26f78b9239cd5928f636592fc05}\label{class_player_a8e5bd26f78b9239cd5928f636592fc05} 
+\index{Player@{Player}!setGPA@{setGPA}}
+\index{setGPA@{setGPA}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setGPA()}{setGPA()}}
+{\footnotesize\ttfamily void Player\+::set\+GPA (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Sets the player\textquotesingle{}s GPA resource. 
+
+Increases or decreases the player\textquotesingle{}s GPA, clamped between 0 and 4.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & GPA amount to set.\\
+\hline
+{\em amount} & Amount to change the GPA by. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a56218c3b37664a9d7aced0a234e2813e}\label{class_player_a56218c3b37664a9d7aced0a234e2813e} 
+\index{Player@{Player}!setHappiness@{setHappiness}}
+\index{setHappiness@{setHappiness}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setHappiness()}{setHappiness()}}
+{\footnotesize\ttfamily void Player\+::set\+Happiness (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Sets the player\textquotesingle{}s happiness resource. 
+
+Increases or decreases the player\textquotesingle{}s happiness.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Happiness amount to set.\\
+\hline
+{\em amount} & Amount to change the happiness by. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a7d2062380721cbe36e9bbe608eb5e46b}\label{class_player_a7d2062380721cbe36e9bbe608eb5e46b} 
+\index{Player@{Player}!setMajor@{setMajor}}
+\index{setMajor@{setMajor}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setMajor()}{setMajor()}}
+{\footnotesize\ttfamily void Player\+::set\+Major (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the player\textquotesingle{}s chosen major. 
+
+Sets the major of the player.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Major value to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a032f8365f4db9c00ac15f3f55ed3d1d2}\label{class_player_a032f8365f4db9c00ac15f3f55ed3d1d2} 
+\index{Player@{Player}!setPath@{setPath}}
+\index{setPath@{setPath}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setPath()}{setPath()}}
+{\footnotesize\ttfamily void Player\+::set\+Path (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ sf\+::\+Vector2f $>$ \&}]{spaces }\end{DoxyParamCaption})}
+
+
+
+Sets the player\textquotesingle{}s movement path. 
+
+Sets the path for the player to follow.
+
+
+\begin{DoxyParams}{Parameters}
+{\em spaces} & Vector of positions representing the movement path.\\
+\hline
+{\em spaces} & Vector of positions representing the player\textquotesingle{}s path. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}\label{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4} 
+\index{Player@{Player}!update@{update}}
+\index{update@{update}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Player\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the player\textquotesingle{}s state, including movement and resource management. 
+
+Updates the player\textquotesingle{}s position during movement. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_player_8h}{Player.\+h}}\item 
+\mbox{\hyperlink{player_8cpp}{player.\+cpp}}\end{DoxyCompactItemize}

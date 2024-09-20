@@ -1,0 +1,28 @@
+\chapter{Running SFML Program with Homebrew}
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{Running SFML Program with Homebrew@{Running SFML Program with Homebrew}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+ This guide will help you set up Homebrew and run an SFML program on your computer system. Disclaimer, all group members used Mac\+OS for this project.\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{Step 1\+: Installing Homebrew}{Step 1: Installing Homebrew}}\label{md__r_e_a_d_m_e_autotoc_md1}
+Run the following command in Terminal to install Homebrew\+: /bin/bash -\/c "{}\$(curl -\/fs\+SL https\+://raw.\+githubusercontent.\+com/\+Homebrew/install/\+HEAD/install.\+sh)"{}\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{Step 2\+: Install SFML}{Step 2: Install SFML}}\label{md__r_e_a_d_m_e_autotoc_md2}
+Run the following command in Terminal\+: {\ttfamily brew install sfml}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{\texorpdfstring{Step 3\+: Setting up and running an SFML Program}{Step 3: Setting up and running an SFML Program}}\label{md__r_e_a_d_m_e_autotoc_md3}
+To run the code type the following into terminal after you cd into the folder where the code is downloaded\+: g++ -\/o game \doxylink{events_8cpp}{Events.\+cpp} Game.\+cpp \doxylink{game_board_8cpp}{Game\+Board.\+cpp} \doxylink{graduation_8cpp}{Graduation.\+cpp} \doxylink{main_8cpp}{Main.\+cpp} \doxylink{major_selection_8cpp}{Major\+Selection.\+cpp} \doxylink{player_8cpp}{Player.\+cpp} \doxylink{resource_display_8cpp}{Resource\+Display.\+cpp} \doxylink{_wheel_8cpp}{Wheel.\+cpp} -\/\+I/usr/local/\+Cellar/sfml/2.\+6.\+1/include -\/\+L/usr/local/\+Cellar/sfml/2.\+6.\+1/lib -\/lsfml-\/graphics -\/lsfml-\/window -\/lsfml-\/system\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsection{\texorpdfstring{Note\+: If this command gives you an error, try these steps below}{Note: If this command gives you an error, try these steps below}}\label{md__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyEnumerate}
+\item Run {\bfseries{brew info sfml}}
+\item Locate the correct path needed (for example some users may get {\itshape L/home/linuxbrew/.linuxbrew/\+Cellar/sfml/2.\+6.\+1/lib})
+\item Retry the {\bfseries{g++}} command with the correct path to get sfml to run properly
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{\texorpdfstring{Finally run the compiled program by executing\+:}{Finally run the compiled program by executing:}}\label{md__r_e_a_d_m_e_autotoc_md5}
+./game
+
+It should look something like this\+:
+
+\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysection{\texorpdfstring{How to Play}{How to Play}}\label{md__r_e_a_d_m_e_autotoc_md6}
+Welcome to Western Wonderland -- a Western University adaptation of The Game of Life. We wanted to create a game highlighting our fond university memories throughout the past few years. This game supports 2 players.\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsubsection{\texorpdfstring{Instructions\+:}{Instructions:}}\label{md__r_e_a_d_m_e_autotoc_md7}
+
+\begin{DoxyEnumerate}
+\item Players will select their major (Western or Ivey), determining their path for the first half of the game, as well as the amount of resources that you start the game with.
+\item Throughout the game, GPA, student debt, and happiness will be tracked for each player. The game\textquotesingle{}s goal is to maximize GPA and happiness while minimizing student debt. The winner of the game will be determined based on how many of these categories you \textquotesingle{}win\textquotesingle{}. The winner will be determined once both players reach the end of the board during a graduation event.
+\item To spin the wheel, press the spacebar on your keyboard. Players will take turns spinning the wheel, determining the number of spaces their marker moves on the board. Turns will alternate until both players have reached the end of the board.
+\item \doxylink{struct_event}{Event} spaces are special spaces indicated by colour tiles on the board. \doxylink{struct_event}{Event} spaces tell a story about a memorable university experience and affect your in-\/game resources.
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysubsubsection{\texorpdfstring{Keyboard Commands\+:}{Keyboard Commands:}}\label{md__r_e_a_d_m_e_autotoc_md8}
+I -\/ Select Ivey path W -\/ Select Western path Spacebar -\/ Spin wheel A -\/ Display player 1 resources B -\/ Display player 2 resources X -\/ Close resource display popup 

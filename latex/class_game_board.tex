@@ -1,0 +1,146 @@
+\doxysection{Game\+Board Class Reference}
+\hypertarget{class_game_board}{}\label{class_game_board}\index{GameBoard@{GameBoard}}
+
+
+Represents the game board and its properties.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Board.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_board_ac622cadcc81b3ffb71d8feb4506c04ac}{Game\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{class_game_board}{Game\+Board} class. \end{DoxyCompactList}\item 
+const std\+::vector$<$ sf\+::\+Vector2f $>$ \& \mbox{\hyperlink{class_game_board_a4ff679a43cf556a4206fef8bcbdf5e27}{get\+Ivey\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Get the coordinates of spaces on the Ivey path. \end{DoxyCompactList}\item 
+const std\+::vector$<$ sf\+::\+Vector2f $>$ \& \mbox{\hyperlink{class_game_board_a47800091ae7dfadc95c1394a2e9ef778}{get\+Western\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Get the coordinates of spaces on the Western path. \end{DoxyCompactList}\item 
+const std\+::vector$<$ sf\+::\+Vector2f $>$ \& \mbox{\hyperlink{class_game_board_aa88d1f490171a2536fb8b9ccbaa9e817}{get\+Event\+Spaces}} () const
+\begin{DoxyCompactList}\small\item\em Get the coordinates of spaces where events can occur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_board_aab2f6605a06d4a08cdf86f3b0c3a2174}{draw}} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Draw the game board on the specified SFML Render\+Window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_game_board_a66050fa4a29e130516048d513abb5c7d}\label{class_game_board_a66050fa4a29e130516048d513abb5c7d} 
+std\+::vector$<$ sf\+::\+Vector2f $>$ {\bfseries spaces}
+\begin{DoxyCompactList}\small\item\em Coordinates for each space on the board. \end{DoxyCompactList}\item 
+\Hypertarget{class_game_board_a06ba90ab785e9fd5183e66273cf64854}\label{class_game_board_a06ba90ab785e9fd5183e66273cf64854} 
+const int {\bfseries tile\+Size}
+\begin{DoxyCompactList}\small\item\em Size of each tile in pixels. \end{DoxyCompactList}\item 
+\Hypertarget{class_game_board_a671419cdc3969aea810f5ab38c9e6f23}\label{class_game_board_a671419cdc3969aea810f5ab38c9e6f23} 
+const int {\bfseries board\+Size}
+\begin{DoxyCompactList}\small\item\em Size of the game board (number of tiles in each dimension). \end{DoxyCompactList}\item 
+\Hypertarget{class_game_board_a5b3dc3a2c53bb606bbf7df3558e1521e}\label{class_game_board_a5b3dc3a2c53bb606bbf7df3558e1521e} 
+const sf\+::\+Color {\bfseries custom\+Color1}
+\begin{DoxyCompactList}\small\item\em Custom color 1. \end{DoxyCompactList}\item 
+\Hypertarget{class_game_board_aed567b6ecccf08f9848bc3a18dd185d2}\label{class_game_board_aed567b6ecccf08f9848bc3a18dd185d2} 
+const sf\+::\+Color {\bfseries custom\+Color2}
+\begin{DoxyCompactList}\small\item\em Custom color 2. \end{DoxyCompactList}\item 
+\Hypertarget{class_game_board_adefffe5b6fbcd0de85eecfcefb195e9a}\label{class_game_board_adefffe5b6fbcd0de85eecfcefb195e9a} 
+std\+::vector$<$ sf\+::\+Vector2f $>$ {\bfseries ivey\+Path}
+\begin{DoxyCompactList}\small\item\em Coordinates for spaces on the Ivey path. \end{DoxyCompactList}\item 
+\Hypertarget{class_game_board_abfcc965f6823e66d9532ca29fcbe7364}\label{class_game_board_abfcc965f6823e66d9532ca29fcbe7364} 
+std\+::vector$<$ sf\+::\+Vector2f $>$ {\bfseries western\+Path}
+\begin{DoxyCompactList}\small\item\em Coordinates for spaces on the Western path. \end{DoxyCompactList}\item 
+\Hypertarget{class_game_board_af01e861c7963fb0be30857c03b22cbf3}\label{class_game_board_af01e861c7963fb0be30857c03b22cbf3} 
+std\+::vector$<$ sf\+::\+Vector2f $>$ {\bfseries event\+Spaces}
+\begin{DoxyCompactList}\small\item\em Coordinates for spaces where events can occur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the game board and its properties. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_game_board_ac622cadcc81b3ffb71d8feb4506c04ac}\label{class_game_board_ac622cadcc81b3ffb71d8feb4506c04ac} 
+\index{GameBoard@{GameBoard}!GameBoard@{GameBoard}}
+\index{GameBoard@{GameBoard}!GameBoard@{GameBoard}}
+\doxysubsubsection{\texorpdfstring{GameBoard()}{GameBoard()}}
+{\footnotesize\ttfamily Game\+Board\+::\+Game\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{class_game_board}{Game\+Board} class. 
+
+Constructs a \doxylink{class_game_board}{Game\+Board} object with default settings. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_game_board_aab2f6605a06d4a08cdf86f3b0c3a2174}\label{class_game_board_aab2f6605a06d4a08cdf86f3b0c3a2174} 
+\index{GameBoard@{GameBoard}!draw@{draw}}
+\index{draw@{draw}!GameBoard@{GameBoard}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Game\+Board\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Draw the game board on the specified SFML Render\+Window. 
+
+Draws the game board on the specified SFML Render\+Window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & SFML Render\+Window on which to draw the game board.\\
+\hline
+{\em window} & SFML Render\+Window to draw the game board on. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_game_board_aa88d1f490171a2536fb8b9ccbaa9e817}\label{class_game_board_aa88d1f490171a2536fb8b9ccbaa9e817} 
+\index{GameBoard@{GameBoard}!getEventSpaces@{getEventSpaces}}
+\index{getEventSpaces@{getEventSpaces}!GameBoard@{GameBoard}}
+\doxysubsubsection{\texorpdfstring{getEventSpaces()}{getEventSpaces()}}
+{\footnotesize\ttfamily const std\+::vector$<$ sf\+::\+Vector2f $>$ \& Game\+Board\+::get\+Event\+Spaces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the coordinates of spaces where events can occur. 
+
+Gets the event spaces vector.
+
+\begin{DoxyReturn}{Returns}
+Vector containing coordinates of spaces where events can occur.
+
+Const reference to the event spaces vector. 
+\end{DoxyReturn}
+\Hypertarget{class_game_board_a4ff679a43cf556a4206fef8bcbdf5e27}\label{class_game_board_a4ff679a43cf556a4206fef8bcbdf5e27} 
+\index{GameBoard@{GameBoard}!getIveyPath@{getIveyPath}}
+\index{getIveyPath@{getIveyPath}!GameBoard@{GameBoard}}
+\doxysubsubsection{\texorpdfstring{getIveyPath()}{getIveyPath()}}
+{\footnotesize\ttfamily const std\+::vector$<$ sf\+::\+Vector2f $>$ \& Game\+Board\+::get\+Ivey\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the coordinates of spaces on the Ivey path. 
+
+Gets the Ivey path vector.
+
+\begin{DoxyReturn}{Returns}
+Vector containing coordinates of spaces on the Ivey path.
+
+Const reference to the Ivey path vector. 
+\end{DoxyReturn}
+\Hypertarget{class_game_board_a47800091ae7dfadc95c1394a2e9ef778}\label{class_game_board_a47800091ae7dfadc95c1394a2e9ef778} 
+\index{GameBoard@{GameBoard}!getWesternPath@{getWesternPath}}
+\index{getWesternPath@{getWesternPath}!GameBoard@{GameBoard}}
+\doxysubsubsection{\texorpdfstring{getWesternPath()}{getWesternPath()}}
+{\footnotesize\ttfamily const std\+::vector$<$ sf\+::\+Vector2f $>$ \& Game\+Board\+::get\+Western\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the coordinates of spaces on the Western path. 
+
+Gets the Western path vector.
+
+\begin{DoxyReturn}{Returns}
+Vector containing coordinates of spaces on the Western path.
+
+Const reference to the Western path vector. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_game_board_8h}{Game\+Board.\+h}}\item 
+\mbox{\hyperlink{game_board_8cpp}{game\+Board.\+cpp}}\end{DoxyCompactItemize}

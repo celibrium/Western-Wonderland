@@ -1,0 +1,53 @@
+\doxysection{Resource\+Display.\+h File Reference}
+\hypertarget{_resource_display_8h}{}\label{_resource_display_8h}\index{ResourceDisplay.h@{ResourceDisplay.h}}
+
+
+Header file for displaying the player\textquotesingle{}s resources in the game.  
+
+
+{\ttfamily \#include $<$SFML/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}Player.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_resource_display_8h_afdd0b382be97877c2380e9cf7547ba49}{Resource\+Display\+::resource\+Display}} (sf\+::\+Render\+Window \&window, const \mbox{\hyperlink{class_player}{Player}} \&player, const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Displays the player\textquotesingle{}s resources on the game window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for displaying the player\textquotesingle{}s resources in the game. 
+
+\begin{DoxyAuthor}{Author}
+Ansel Zeng, Kelly Guo, Stanley Cao, Charmaine Lee, Nicole Moskovitch 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_resource_display_8h_afdd0b382be97877c2380e9cf7547ba49}\label{_resource_display_8h_afdd0b382be97877c2380e9cf7547ba49} 
+\index{ResourceDisplay.h@{ResourceDisplay.h}!resourceDisplay@{resourceDisplay}}
+\index{resourceDisplay@{resourceDisplay}!ResourceDisplay.h@{ResourceDisplay.h}}
+\doxysubsubsection{\texorpdfstring{resourceDisplay()}{resourceDisplay()}}
+{\footnotesize\ttfamily void Resource\+Display\+::resource\+Display (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{const \mbox{\hyperlink{class_player}{Player}} \&}]{player,  }\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})}
+
+
+
+Displays the player\textquotesingle{}s resources on the game window. 
+
+Displays player resources and information in a popup window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & SFML Render\+Window to display the resource information. \\
+\hline
+{\em player} & \doxylink{class_player}{Player} object representing the game state. \\
+\hline
+{\em message} & Additional message to be displayed.\\
+\hline
+{\em window} & SFML Render\+Window to display the resource popup. \\
+\hline
+{\em player} & \doxylink{class_player}{Player} object representing the game state. \\
+\hline
+{\em message} & Message to be displayed in the popup window. \\
+\hline
+\end{DoxyParams}

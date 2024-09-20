@@ -1,0 +1,101 @@
+\doxysection{events.\+cpp File Reference}
+\hypertarget{events_8cpp}{}\label{events_8cpp}\index{events.cpp@{events.cpp}}
+
+
+Implementation file for handling in-\/game events.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$SFML/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include "{}Events.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_event}{Event}}
+\begin{DoxyCompactList}\small\item\em Represents an in-\/game event with associated attributes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_event}{Event}} \mbox{\hyperlink{events_8cpp_a41c41dc9d5f08f77178fc2ba43bcdce8}{read\+Event}} (std\+::ifstream \&file)
+\begin{DoxyCompactList}\small\item\em Reads an event from a file. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{events_8cpp_a67268f3b568c41e324ab1f56f4133e2e}{wrap\+Text}} (const std\+::string \&str, const sf\+::\+Font \&font, unsigned int char\+Size, unsigned int max\+Line\+Width)
+\begin{DoxyCompactList}\small\item\em Wraps text to fit within a specified width. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{events_8cpp_acbf8b4dac8c9e63918133aa1e1ebe0c9}{events\+::player\+Event}} (sf\+::\+Render\+Window \&window, const std\+::string \&message, \mbox{\hyperlink{class_player}{Player}} \&player)
+\begin{DoxyCompactList}\small\item\em Displays an event popup window to the player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation file for handling in-\/game events. 
+
+\begin{DoxyAuthor}{Author}
+Ansel Zeng, Kelly Guo, Stanley Cao, Charmaine Lee, Nicole Moskovitch 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{events_8cpp_acbf8b4dac8c9e63918133aa1e1ebe0c9}\label{events_8cpp_acbf8b4dac8c9e63918133aa1e1ebe0c9} 
+\index{events.cpp@{events.cpp}!playerEvent@{playerEvent}}
+\index{playerEvent@{playerEvent}!events.cpp@{events.cpp}}
+\doxysubsubsection{\texorpdfstring{playerEvent()}{playerEvent()}}
+{\footnotesize\ttfamily void events\+::player\+Event (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{const std\+::string \&}]{message,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{player }\end{DoxyParamCaption})}
+
+
+
+Displays an event popup window to the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & SFML Render\+Window to display the event popup. \\
+\hline
+{\em message} & Message to be displayed in the popup window. \\
+\hline
+{\em player} & \doxylink{class_player}{Player} object representing the game state. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{events_8cpp_a41c41dc9d5f08f77178fc2ba43bcdce8}\label{events_8cpp_a41c41dc9d5f08f77178fc2ba43bcdce8} 
+\index{events.cpp@{events.cpp}!readEvent@{readEvent}}
+\index{readEvent@{readEvent}!events.cpp@{events.cpp}}
+\doxysubsubsection{\texorpdfstring{readEvent()}{readEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_event}{Event}} read\+Event (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{file }\end{DoxyParamCaption})}
+
+
+
+Reads an event from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Input file stream. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{struct_event}{Event} object containing the details of the read event. 
+\end{DoxyReturn}
+\Hypertarget{events_8cpp_a67268f3b568c41e324ab1f56f4133e2e}\label{events_8cpp_a67268f3b568c41e324ab1f56f4133e2e} 
+\index{events.cpp@{events.cpp}!wrapText@{wrapText}}
+\index{wrapText@{wrapText}!events.cpp@{events.cpp}}
+\doxysubsubsection{\texorpdfstring{wrapText()}{wrapText()}}
+{\footnotesize\ttfamily std\+::string wrap\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str,  }\item[{const sf\+::\+Font \&}]{font,  }\item[{unsigned int}]{char\+Size,  }\item[{unsigned int}]{max\+Line\+Width }\end{DoxyParamCaption})}
+
+
+
+Wraps text to fit within a specified width. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Input string to be wrapped. \\
+\hline
+{\em font} & Font for text rendering. \\
+\hline
+{\em char\+Size} & Character size for text rendering. \\
+\hline
+{\em max\+Line\+Width} & Maximum width for a line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wrapped text as a string. 
+\end{DoxyReturn}

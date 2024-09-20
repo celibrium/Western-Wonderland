@@ -1,0 +1,41 @@
+\doxysection{Game\+Board.\+h}
+\hypertarget{_game_board_8h_source}{}\label{_game_board_8h_source}\mbox{\hyperlink{_game_board_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GAMEBOARD\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GAMEBOARD\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_board}{GameBoard}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ std::vector<sf::Vector2f>\ \mbox{\hyperlink{class_game_board_a66050fa4a29e130516048d513abb5c7d}{spaces}};\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ Additional\ properties,\ like\ textures,\ tiles,\ etc.,\ can\ be\ added\ here}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//\ Constants}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_board_a06ba90ab785e9fd5183e66273cf64854}{tileSize}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_board_a671419cdc3969aea810f5ab38c9e6f23}{boardSize}};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{const}\ sf::Color\ \mbox{\hyperlink{class_game_board_a5b3dc3a2c53bb606bbf7df3558e1521e}{customColor1}};\ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{const}\ sf::Color\ \mbox{\hyperlink{class_game_board_aed567b6ecccf08f9848bc3a18dd185d2}{customColor2}};\ \ \ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ std::vector<sf::Vector2f>\ \mbox{\hyperlink{class_game_board_adefffe5b6fbcd0de85eecfcefb195e9a}{iveyPath}};\ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ std::vector<sf::Vector2f>\ \mbox{\hyperlink{class_game_board_abfcc965f6823e66d9532ca29fcbe7364}{westernPath}};\ \ }
+\DoxyCodeLine{00030\ \ \ \ \ std::vector<sf::Vector2f>\ \mbox{\hyperlink{class_game_board_af01e861c7963fb0be30857c03b22cbf3}{eventSpaces}};\ \ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_game_board_ac622cadcc81b3ffb71d8feb4506c04ac}{GameBoard}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<sf::Vector2f>\&\ \mbox{\hyperlink{class_game_board_a4ff679a43cf556a4206fef8bcbdf5e27}{getIveyPath}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<sf::Vector2f>\&\ \mbox{\hyperlink{class_game_board_a47800091ae7dfadc95c1394a2e9ef778}{getWesternPath}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<sf::Vector2f>\&\ \mbox{\hyperlink{class_game_board_aa88d1f490171a2536fb8b9ccbaa9e817}{getEventSpaces}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_board_aab2f6605a06d4a08cdf86f3b0c3a2174}{draw}}(sf::RenderWindow\&\ window);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{comment}{//\ bool\ isSpecialSpace(int\ index)\ const;}}
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ GAMEBOARD\_H}}
+
+\end{DoxyCode}

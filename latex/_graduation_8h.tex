@@ -1,0 +1,89 @@
+\doxysection{Graduation.\+h File Reference}
+\hypertarget{_graduation_8h}{}\label{_graduation_8h}\index{Graduation.h@{Graduation.h}}
+
+
+Header file for handling graduation events and determining the winner.  
+
+
+{\ttfamily \#include $<$SFML/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}Player.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_graduation_8h_a314b7bd8079bba5fefde731ee1fb1ad3}{Graduation\+::graduation\+Event}} (sf\+::\+Render\+Window \&window, const std\+::string \&message, \mbox{\hyperlink{class_player}{Player}} \&player1, \mbox{\hyperlink{class_player}{Player}} \&player2)
+\begin{DoxyCompactList}\small\item\em Displays a graduation event popup for two players and determines the winner. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{_graduation_8h_a50a7e82cb3ed367dac7ef7d481bd3046}{Graduation\+::\+Winner}} (int P1score, int P2score)
+\begin{DoxyCompactList}\small\item\em Determines the winner based on the scores of two players. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for handling graduation events and determining the winner. 
+
+\begin{DoxyAuthor}{Author}
+Ansel Zeng, Kelly Guo, Stanley Cao, Charmaine Lee, Nicole Moskovitch 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_graduation_8h_a314b7bd8079bba5fefde731ee1fb1ad3}\label{_graduation_8h_a314b7bd8079bba5fefde731ee1fb1ad3} 
+\index{Graduation.h@{Graduation.h}!graduationEvent@{graduationEvent}}
+\index{graduationEvent@{graduationEvent}!Graduation.h@{Graduation.h}}
+\doxysubsubsection{\texorpdfstring{graduationEvent()}{graduationEvent()}}
+{\footnotesize\ttfamily void Graduation\+::graduation\+Event (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{const std\+::string \&}]{message,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{player1,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{player2 }\end{DoxyParamCaption})}
+
+
+
+Displays a graduation event popup for two players and determines the winner. 
+
+Displays the graduation event popup window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & SFML Render\+Window to display the graduation event popup. \\
+\hline
+{\em message} & Message to be displayed in the popup window. \\
+\hline
+{\em player1} & \doxylink{class_player}{Player} object representing the first player\textquotesingle{}s game state. \\
+\hline
+{\em player2} & \doxylink{class_player}{Player} object representing the second player\textquotesingle{}s game state.\\
+\hline
+{\em window} & SFML Render\+Window to display the graduation event popup. \\
+\hline
+{\em message} & Message to be displayed in the popup window. \\
+\hline
+{\em player1} & First player object representing the game state. \\
+\hline
+{\em player2} & Second player object representing the game state. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_graduation_8h_a50a7e82cb3ed367dac7ef7d481bd3046}\label{_graduation_8h_a50a7e82cb3ed367dac7ef7d481bd3046} 
+\index{Graduation.h@{Graduation.h}!Winner@{Winner}}
+\index{Winner@{Winner}!Graduation.h@{Graduation.h}}
+\doxysubsubsection{\texorpdfstring{Winner()}{Winner()}}
+{\footnotesize\ttfamily std\+::string Graduation\+::\+Winner (\begin{DoxyParamCaption}\item[{int}]{P1score,  }\item[{int}]{P2score }\end{DoxyParamCaption})}
+
+
+
+Determines the winner based on the scores of two players. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P1score} & Score of the first player. \\
+\hline
+{\em P2score} & Score of the second player. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string indicating the winner.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em P1score} & Score of \doxylink{class_player}{Player} 1. \\
+\hline
+{\em P2score} & Score of \doxylink{class_player}{Player} 2. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string indicating the winner or a tie. 
+\end{DoxyReturn}

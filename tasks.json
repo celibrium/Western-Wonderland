@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build with g++",  // The label or name of this task
+            "type": "shell",
+            "command": "g++",  // The command to run
+            "args": [
+                "-std=c++11",  // Compiler flag for C++11
+                "-I/usr/local/include",  // Include directory for SFML headers
+                "-L/usr/local/lib",  // Library directory for SFML
+                "-lsfml-graphics",  // Link SFML graphics library
+                "-lsfml-window",  // Link SFML window library
+                "-lsfml-system",  // Link SFML system library
+                "main.cpp",  // Source file to compile
+                "-o",  // Output flag
+                "output"  // Output file name
+            ],
+            "group": {
+                "kind": "build",  // The group kind (e.g., build, test, etc.)
+                "isDefault": true  // Whether this is the default build task
+            }
+        }
+    ]
+}

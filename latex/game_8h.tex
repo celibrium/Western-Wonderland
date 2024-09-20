@@ -1,0 +1,53 @@
+\doxysection{game.\+h File Reference}
+\hypertarget{game_8h}{}\label{game_8h}\index{game.h@{game.h}}
+
+
+Header file defining the game start functionality.  
+
+
+{\ttfamily \#include $<$SFML/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{game_8cpp_a904208b9386c20e97c1ac2fbb7ef3d56}{gamestart\+::gamestart}} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Displays the game start popup and handles user interaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file defining the game start functionality. 
+
+\begin{DoxyAuthor}{Author}
+Ansel Zeng, Kelly Guo, Stanley Cao, Charmaine Lee, Nicole Moskovitch 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{game_8cpp_a904208b9386c20e97c1ac2fbb7ef3d56}\label{game_8cpp_a904208b9386c20e97c1ac2fbb7ef3d56} 
+\index{game.h@{game.h}!gamestart@{gamestart}}
+\index{gamestart@{gamestart}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{gamestart()}{gamestart()}}
+{\footnotesize\ttfamily bool gamestart\+::gamestart (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Displays the game start popup and handles user interaction. 
+
+Initiates the game and displays the main menu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & SFML Render\+Window to display the game start popup. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the user clicks the start button, false if the window is closed or an error occurs.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em window} & SFML Render\+Window for the game. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the game started successfully, false otherwise. 
+\end{DoxyReturn}

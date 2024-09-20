@@ -1,0 +1,139 @@
+\doxysection{Wheel Class Reference}
+\hypertarget{class_wheel}{}\label{class_wheel}\index{Wheel@{Wheel}}
+
+
+Represents a spinning wheel game.  
+
+
+
+
+{\ttfamily \#include $<$Wheel.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_wheel_a7c75aaceaf4c96aec4d4f9398abed873}{Wheel}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \doxylink{class_wheel}{Wheel} class. \end{DoxyCompactList}\item 
+std\+::pair$<$ int, float $>$ \mbox{\hyperlink{class_wheel_a4c036c8407575a790d12be471d8c6955}{Spin\+Wheel}} (sf\+::\+Render\+Window \&\mbox{\hyperlink{class_wheel_a951d662bd07e2d792d902d0fd7e130d4}{window}})
+\begin{DoxyCompactList}\small\item\em Spins the wheel and returns the result. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_wheel_a4a33601c283688d6c511452b83977277}{Get\+Spin\+Result}} (int index)
+\begin{DoxyCompactList}\small\item\em Gets the spin result at a specified index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_wheel_af9ae7379f960c525be60539a413feca5}{Draw\+Wheel}} (float arrow\+Angle, sf\+::\+Render\+Window \&\mbox{\hyperlink{class_wheel_a951d662bd07e2d792d902d0fd7e130d4}{window}})
+\begin{DoxyCompactList}\small\item\em Draws the spinning wheel with an arrow indicating the result. \end{DoxyCompactList}\item 
+\Hypertarget{class_wheel_a8afb25ca9f47fdbdb01689467c7e5daa}\label{class_wheel_a8afb25ca9f47fdbdb01689467c7e5daa} 
+void {\bfseries Run} ()
+\begin{DoxyCompactList}\small\item\em Runs the spinning wheel game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_wheel_a951d662bd07e2d792d902d0fd7e130d4}\label{class_wheel_a951d662bd07e2d792d902d0fd7e130d4} 
+sf\+::\+Render\+Window {\bfseries window}
+\begin{DoxyCompactList}\small\item\em SFML Render\+Window for drawing the wheel. \end{DoxyCompactList}\item 
+\Hypertarget{class_wheel_a05e0546de17ee6de4ba547395e8c0f1a}\label{class_wheel_a05e0546de17ee6de4ba547395e8c0f1a} 
+sf\+::\+Font {\bfseries font}
+\begin{DoxyCompactList}\small\item\em Font for text rendering. \end{DoxyCompactList}\item 
+\Hypertarget{class_wheel_ad574a6b2b13fce7ca0e3021b5ed83ea3}\label{class_wheel_ad574a6b2b13fce7ca0e3021b5ed83ea3} 
+std\+::vector$<$ int $>$ {\bfseries numbers}
+\begin{DoxyCompactList}\small\item\em Vector containing the wheel result numbers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a spinning wheel game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_wheel_a7c75aaceaf4c96aec4d4f9398abed873}\label{class_wheel_a7c75aaceaf4c96aec4d4f9398abed873} 
+\index{Wheel@{Wheel}!Wheel@{Wheel}}
+\index{Wheel@{Wheel}!Wheel@{Wheel}}
+\doxysubsubsection{\texorpdfstring{Wheel()}{Wheel()}}
+{\footnotesize\ttfamily Wheel\+::\+Wheel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \doxylink{class_wheel}{Wheel} class. 
+
+Default constructor for the \doxylink{class_wheel}{Wheel} class. Initializes the wheel with numbers and loads the font. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_wheel_af9ae7379f960c525be60539a413feca5}\label{class_wheel_af9ae7379f960c525be60539a413feca5} 
+\index{Wheel@{Wheel}!DrawWheel@{DrawWheel}}
+\index{DrawWheel@{DrawWheel}!Wheel@{Wheel}}
+\doxysubsubsection{\texorpdfstring{DrawWheel()}{DrawWheel()}}
+{\footnotesize\ttfamily void Wheel\+::\+Draw\+Wheel (\begin{DoxyParamCaption}\item[{float}]{arrow\+Angle,  }\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Draws the spinning wheel with an arrow indicating the result. 
+
+Draws the wheel with segments and the spinning arrow.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arrow\+Angle} & Angle of the arrow indicating the wheel result. \\
+\hline
+{\em window} & SFML Render\+Window for drawing the wheel.\\
+\hline
+{\em arrow\+Angle} & Angle of the spinning arrow. \\
+\hline
+{\em window} & SFML Render\+Window for drawing. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_wheel_a4a33601c283688d6c511452b83977277}\label{class_wheel_a4a33601c283688d6c511452b83977277} 
+\index{Wheel@{Wheel}!GetSpinResult@{GetSpinResult}}
+\index{GetSpinResult@{GetSpinResult}!Wheel@{Wheel}}
+\doxysubsubsection{\texorpdfstring{GetSpinResult()}{GetSpinResult()}}
+{\footnotesize\ttfamily int Wheel\+::\+Get\+Spin\+Result (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Gets the spin result at a specified index. 
+
+Retrieves the spin result based on the wheel index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of the spin result to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The spin result at the specified index.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of the wheel segment where the arrow stops. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Spin result (number). 
+\end{DoxyReturn}
+\Hypertarget{class_wheel_a4c036c8407575a790d12be471d8c6955}\label{class_wheel_a4c036c8407575a790d12be471d8c6955} 
+\index{Wheel@{Wheel}!SpinWheel@{SpinWheel}}
+\index{SpinWheel@{SpinWheel}!Wheel@{Wheel}}
+\doxysubsubsection{\texorpdfstring{SpinWheel()}{SpinWheel()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, float $>$ Wheel\+::\+Spin\+Wheel (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Spins the wheel and returns the result. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & SFML Render\+Window for drawing the wheel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pair containing the index and angle of the wheel result.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em window} & SFML Render\+Window for drawing the wheel animation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pair containing the spin result (number) and arrow angle. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_wheel_8h}{Wheel.\+h}}\item 
+\mbox{\hyperlink{_wheel_8cpp}{Wheel.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+\doxysection{main.\+cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Entry point for the Western Wonderland game.  
+
+
+{\ttfamily \#include $<$SFML/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include "{}Wheel.\+h"{}}\newline
+{\ttfamily \#include "{}Graduation.\+h"{}}\newline
+{\ttfamily \#include "{}Player.\+h"{}}\newline
+{\ttfamily \#include "{}Game\+Board.\+h"{}}\newline
+{\ttfamily \#include "{}Events.\+h"{}}\newline
+{\ttfamily \#include "{}game.\+h"{}}\newline
+{\ttfamily \#include "{}major\+Selection.\+h"{}}\newline
+{\ttfamily \#include "{}Resource\+Display.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Main function to run the Western Wonderland game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{main_8cpp_a8adcd57e318ecb77a2ffe6ec188f005b}{TILE\+\_\+\+SIZE}} = 40
+\item 
+const int \mbox{\hyperlink{main_8cpp_aa7a2b8ea2c784a4ad8b58a3262bb4f07}{BOARD\+\_\+\+SIZE}} = 11
+\item 
+const int \mbox{\hyperlink{main_8cpp_a5e6ce0dd58078611570510dc4b8d81f3}{WINDOW\+\_\+\+WIDTH}} = \mbox{\hyperlink{main_8cpp_a8adcd57e318ecb77a2ffe6ec188f005b}{TILE\+\_\+\+SIZE}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{main_8cpp_aa7a2b8ea2c784a4ad8b58a3262bb4f07}{BOARD\+\_\+\+SIZE}}
+\item 
+const int \mbox{\hyperlink{main_8cpp_ab76d138fa589df9a65fc05eb3bd56073}{WINDOW\+\_\+\+HEIGHT}} = \mbox{\hyperlink{main_8cpp_a8adcd57e318ecb77a2ffe6ec188f005b}{TILE\+\_\+\+SIZE}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{main_8cpp_aa7a2b8ea2c784a4ad8b58a3262bb4f07}{BOARD\+\_\+\+SIZE}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Entry point for the Western Wonderland game. 
+
+\begin{DoxyAuthor}{Author}
+Ansel Zeng, Kelly Guo, Stanley Cao, Charmaine Lee, Nicole Moskovitch 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main function to run the Western Wonderland game. 
+
+\begin{DoxyReturn}{Returns}
+Exit status of the program. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{main_8cpp_aa7a2b8ea2c784a4ad8b58a3262bb4f07}\label{main_8cpp_aa7a2b8ea2c784a4ad8b58a3262bb4f07} 
+\index{main.cpp@{main.cpp}!BOARD\_SIZE@{BOARD\_SIZE}}
+\index{BOARD\_SIZE@{BOARD\_SIZE}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{BOARD\_SIZE}{BOARD\_SIZE}}
+{\footnotesize\ttfamily const int BOARD\+\_\+\+SIZE = 11}
+
+Size of the game board (number of tiles in each dimension). \Hypertarget{main_8cpp_a8adcd57e318ecb77a2ffe6ec188f005b}\label{main_8cpp_a8adcd57e318ecb77a2ffe6ec188f005b} 
+\index{main.cpp@{main.cpp}!TILE\_SIZE@{TILE\_SIZE}}
+\index{TILE\_SIZE@{TILE\_SIZE}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{TILE\_SIZE}{TILE\_SIZE}}
+{\footnotesize\ttfamily const int TILE\+\_\+\+SIZE = 40}
+
+Size of each tile in pixels. \Hypertarget{main_8cpp_ab76d138fa589df9a65fc05eb3bd56073}\label{main_8cpp_ab76d138fa589df9a65fc05eb3bd56073} 
+\index{main.cpp@{main.cpp}!WINDOW\_HEIGHT@{WINDOW\_HEIGHT}}
+\index{WINDOW\_HEIGHT@{WINDOW\_HEIGHT}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{WINDOW\_HEIGHT}{WINDOW\_HEIGHT}}
+{\footnotesize\ttfamily const int WINDOW\+\_\+\+HEIGHT = \mbox{\hyperlink{main_8cpp_a8adcd57e318ecb77a2ffe6ec188f005b}{TILE\+\_\+\+SIZE}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{main_8cpp_aa7a2b8ea2c784a4ad8b58a3262bb4f07}{BOARD\+\_\+\+SIZE}}}
+
+Height of the game window. \Hypertarget{main_8cpp_a5e6ce0dd58078611570510dc4b8d81f3}\label{main_8cpp_a5e6ce0dd58078611570510dc4b8d81f3} 
+\index{main.cpp@{main.cpp}!WINDOW\_WIDTH@{WINDOW\_WIDTH}}
+\index{WINDOW\_WIDTH@{WINDOW\_WIDTH}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{WINDOW\_WIDTH}{WINDOW\_WIDTH}}
+{\footnotesize\ttfamily const int WINDOW\+\_\+\+WIDTH = \mbox{\hyperlink{main_8cpp_a8adcd57e318ecb77a2ffe6ec188f005b}{TILE\+\_\+\+SIZE}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{main_8cpp_aa7a2b8ea2c784a4ad8b58a3262bb4f07}{BOARD\+\_\+\+SIZE}}}
+
+Width of the game window. 
